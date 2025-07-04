@@ -1,9 +1,9 @@
-name: 'your_company_utils'
+name: 'dbt_learning_sandbox'
 version: '0.1.0'
 config-version: 2
 
 # This setting configures which "profile" dbt uses for this project.
-profile: 'your_company_utils'
+profile: 'dbt_learning_sandbox'
 
 # These configurations specify where dbt should look for different types of files.
 model-paths: ["models"]
@@ -20,7 +20,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 # Configuring models
 models:
-  your_company_utils:
+  dbt_learning_sandbox:
     # Config indicated by + and applies to all files under models/example/
     example:
       +materialized: view 

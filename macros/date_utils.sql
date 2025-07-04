@@ -73,7 +73,7 @@
     {% if target.type == 'postgres' %}
         extract(dow from {{ date_column }}) not in (0, 6)
     {% elif target.type == 'snowflake' %}
-        dayofweek({{ date_column }}) not in (1, 7)
+        dayofweek(try_cast({{ date_column }} as date)) not in (1, 7)
     {% elif target.type == 'bigquery' %}
         extract(dayofweek from {{ date_column }}) not in (1, 7)
     {% else %}
