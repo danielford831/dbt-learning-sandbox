@@ -1,0 +1,15 @@
+# This file specifies package dependencies for dbt
+# For more information on how to configure packages in your dbt_project.yml, see:
+# https://docs.getdbt.com/docs/building-a-dbt-project/package-management/
+
+packages:
+  # Example packages from dbt hub
+  - package: dbt-labs/codegen
+    version: 0.9.0  # specify version number, or "latest" for the latest version
+  
+  - package: dbt-labs/dbt_utils
+    version: 1.1.1  # specify version number, or "latest" for the latest version
+  
+  # Add your own packages here
+  # - package: your_company/another_package
+  #   version: 0.1.0 

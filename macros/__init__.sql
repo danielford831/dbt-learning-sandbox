@@ -1,0 +1,2 @@
+-- This file makes the macros directory a proper Python package
+-- It can be empty or contain package-level documentation 
